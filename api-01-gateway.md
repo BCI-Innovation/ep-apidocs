@@ -173,7 +173,7 @@ Run the following in your terminal:
 
 ```shell
 curl -X POST -H "Content-Type: application/json" \
-     -d '{"username":"fherbert","agree_tos":true,"country_tel_code":"1","email":"fherbert@dune.com","first_name":"Frank","last_name":"Herbert","password":"pleasechangeme","password_repeat":"pleasechangeme","telephone":"(123) 456-7898","role_id":1,"city":"London","province":"Ontario","country":"Canada","company_name":"BCI","company_employees_count":1}' \
+     -d '{"username":"fherbert","agree_tos":"true","country_tel_code":"1","email":"fherbert@dune.com","first_name":"Frank","last_name":"Herbert","password":"pleasechangeme","password_repeat":"pleasechangeme","telephone":"(123) 456-7898","role_id":"1","city":"London","province":"Ontario","country":"Canada","company_name":"BCI","company_employees_count":"1"}' \
      https://talentaccelerator.dev/api/v1/register
 ```
 
@@ -181,7 +181,7 @@ curl -X POST -H "Content-Type: application/json" \
 
 ```shell
 curl -X POST -H "Content-Type: application/json" \
-     -d '{"username":"fherbert","agree_tos":true,"country_tel_code":"1","email":"fherbert@dune.com","first_name":"Frank","last_name":"Herbert","password":"pleasechangeme","password_repeat":"pleasechangeme","telephone":"(123) 456-7898","role_id":1,"city":"London","province":"Ontario","country":"Canada","company_name":"BCI","company_employees_count":1}' \
+     -d '{"username":"fherbert","agree_tos":"true","country_tel_code":"1","email":"fherbert@dune.com","first_name":"Frank","last_name":"Herbert","password":"pleasechangeme","password_repeat":"pleasechangeme","telephone":"(123) 456-7898","role_id":"1","city":"London","province":"Ontario","country":"Canada","company_name":"BCI","company_employees_count":"1"}' \
      http://localhost:8000/api/v1/register
 ```
 
@@ -207,7 +207,7 @@ This endpoint will authenticate the user account for the provided `email` and `p
 
 ##### URL
 
-`https://talentaccelerator.dev/api/v1/register`
+`https://talentaccelerator.dev/api/v1/login`
 
 ##### Method
 

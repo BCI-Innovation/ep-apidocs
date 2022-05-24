@@ -39,7 +39,7 @@ Parameter | Required | Description
   * **Status**: `200`
   * **Content**:
     ```json
-    {"id":1,"uuid":"23574bc4-b2c8-42a3-9dbe-2e0c82d03194","tenant_id":1,"user_id":2,"name":"Employment Portal","category":3,"image_s3_key":null,"image_name":"lalal.png","image_url":"https://biometricscloud.nyc3.digitaloceanspaces.com/tenant/1/private/uploads/files/d26fefc0-1d25-45f5-bee7-3ca1b014445d-lalal.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=ECYCCCUHLER27NMNI5OE%2F20220414%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20220414T052037Z\u0026X-Amz-Expires=900\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=3761caebc6e98342a64bc04b639af3b06e1e392d37878c2a6c366b0b2bb82a46","website_url":"https://google.com","state":1,"created_time":"2022-04-14T01:17:53.892906-04:00","modified_time":"2022-04-14T01:17:53.892907-04:00"}
+    {"id":1,"uuid":"23574bc4-b2c8-42a3-9dbe-2e0c82d03194","tenant_id":1,"user_id":2,"name":"Employment Portal","category":"3","image_s3_key":null,"image_name":"lalal.png","image_url":"https://biometricscloud.nyc3.digitaloceanspaces.com/tenant/1/private/uploads/files/d26fefc0-1d25-45f5-bee7-3ca1b014445d-lalal.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=ECYCCCUHLER27NMNI5OE%2F20220414%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20220414T052037Z\u0026X-Amz-Expires=900\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=3761caebc6e98342a64bc04b639af3b06e1e392d37878c2a6c366b0b2bb82a46","website_url":"https://google.com","state":1,"created_time":"2022-04-14T01:17:53.892906-04:00","modified_time":"2022-04-14T01:17:53.892907-04:00"}
     ```
 
 ##### Sample Call
@@ -49,7 +49,7 @@ Run the following in your terminal:
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"name": "Employment Portal","category":3,"website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
+     -d '{"name": "Employment Portal","category":"3,"website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
      https://talentaccelerator.dev/api/v1/user-portfolios
 ```
 
@@ -58,7 +58,7 @@ curl -X POST -H "Content-Type: application/json" \
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"name": "Employment Portal","category":3,"website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
+     -d '{"name": "Employment Portal","category":"3","website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
      http://localhost:8000/api/v1/user-portfolios
 ```
 
@@ -159,7 +159,7 @@ Run the following in your terminal:
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"name": "Employment Portal","category":3,"website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
+     -d '{"name": "Employment Portal","category":"3","website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
      https://talentaccelerator.dev/api/v1/user-portfolio/1
 ```
 
@@ -168,7 +168,7 @@ curl -X PUT -H "Content-Type: application/json" \
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"name": "Employment Portal","category":3,"website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
+     -d '{"name": "Employment Portal","category":"3","website_url":"https://google.com","upload_content":"xyz","upload_filename":"lalal.png"}' \
      http://localhost:8000/api/v1/user-portfolio/1
 ```
 

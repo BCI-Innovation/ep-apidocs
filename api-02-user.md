@@ -185,17 +185,15 @@ Run the following in your terminal:
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"about_me": "I am a go getter!","open_for_founder":true,"open_for_freelance":true,"open_for_ft":true,"open_for_pt":true}' \
+     -d '{"about_me": "I am a go getter!","open_for_founder":"true","open_for_freelance":"true","open_for_ft":"true","open_for_pt":"true"}' \
      https://talentaccelerator.dev/api/v1/user/1/about-yourself
 ```
-
-**OR**
 
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"about_me": "I am a go getter!","open_for_founder":true,"open_for_freelance":true,"open_for_ft":true,"open_for_pt":true}' \
-     http://localhost:8000/api/v1/user/1/about-yourself
+     -d '{"about_me": "I am a go getter!","open_for_founder":"true","open_for_freelance":"true","open_for_ft":"true","open_for_pt":"true"}' \
+     http://localhost:8000/api/v1/user/3/about-yourself
 ```
 
 # **Update Personal Details**

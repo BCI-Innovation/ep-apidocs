@@ -71,7 +71,7 @@ Run the following in your terminal:
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"company_name":"BCI Innovation Labs","city":"London","province":"Ontario","country":"Canada","title":"Web Developer","from_time":"1990-01-01T00:00:00Z","to_time":"1990-01-01T00:00:00Z","is_still_employed_there":true,"description":"This is a sample."}' \
+     -d '{"company_name":"BCI Innovation Labs","city":"London","province":"Ontario","country":"Canada","title":"Web Developer","from_time":"1990-01-01T00:00:00Z","to_time":"1990-01-01T00:00:00Z","is_still_employed_there":"true","description":"This is a sample."}' \
      https://talentaccelerator.dev/api/v1/user-employments
 ```
 
@@ -80,7 +80,7 @@ curl -X POST -H "Content-Type: application/json" \
 ```shell
 curl -X POST -H "Content-Type: application/json" \
     -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-    -d '{"company_name":"BCI Innovation Labs","city":"London","province":"Ontario","country":"Canada","title":"Web Developer","from_time":"1990-01-01T00:00:00Z","to_time":"1990-01-01T00:00:00Z","is_still_employed_there":true,"description":"This is a sample."}' \
+    -d '{"company_name":"BCI Innovation Labs","city":"London","province":"Ontario","country":"Canada","title":"Web Developer","from_time":"1990-01-01T00:00:00Z","to_time":"1990-01-01T00:00:00Z","is_still_employed_there":"true","description":"This is a sample."}' \
      http://localhost:8000/api/v1/user-employments
 ```
 
