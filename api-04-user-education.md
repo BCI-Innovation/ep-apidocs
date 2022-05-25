@@ -29,8 +29,8 @@ None
 Parameter | Required | Description
 --------- | ------- | -----------
 `school_name` | Yes | The name of the school which the diploma/certificate originates from.
-`from_time` | Yes | The start date of when the user began the program. Example: `1990-01-01T00:00:00Z`.
-`to_time` | Yes | The end date of when the user began the program. Example: `1990-01-01T00:00:00Z`.
+`from_time` | Yes | The start date of when the user began the program. Example: `May 1, 2020 12:00 am`.
+`to_time` | Yes | The end date of when the user began the program. Example: `May 1, 2020 12:00 am`.
 `degree_name` | Yes | The official name of the diploma/certificate.
 `field_of_study` | Yes | The field of study this diploma/certificate belongs to.
 `description` | No | A description of the program.
@@ -65,7 +65,7 @@ Run the following in your terminal:
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"school_name":"University of Western Ontario","from_time":"1990-01-01T00:00:00Z","to_time":"1994-01-01T00:00:00Z","degree_name":"Biology","field_of_study":"Science"}' \
+     -d '{"school_name":"University of Western Ontario","from_time":"May 1, 2020 12:00 am","to_time":"May 1, 2022 12:00 am","degree_name":"Biology","field_of_study":"Science"}' \
      https://talentaccelerator.dev/api/v1/user-educations
 ```
 
@@ -74,7 +74,7 @@ curl -X POST -H "Content-Type: application/json" \
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"school_name":"University of Western Ontario","from_time":"1990-01-01T00:00:00Z","to_time":"1994-01-01T00:00:00Z","degree_name":"Biology","field_of_study":"Science"}' \
+     -d '{"school_name":"University of Western Ontario","from_time":"May 1, 2020 12:00 am","to_time":"May 1, 2022 12:00 am","degree_name":"Biology","field_of_study":"Science"}' \
      http://localhost:8000/api/v1/user-educations
 ```
 
@@ -163,8 +163,8 @@ None
 Parameter | Required | Description
 --------- | ------- | -----------
 `school_name` | Yes | The name of the school which the diploma/certificate originates from.
-`from_time` | Yes | The start date of when the user began the program. Example: `1990-01-01T00:00:00Z`.
-`to_time` | Yes | The end date of when the user began the program. Example: `1990-01-01T00:00:00Z`.
+`from_time` | Yes | The start date of when the user began the program. Example: `May 1, 2020 12:00 am`.
+`to_time` | Yes | The end date of when the user began the program. Example: `May 1, 2020 12:00 am`.
 `degree_name` | Yes | The official name of the diploma/certificate.
 `field_of_study` | Yes | The field of study this diploma/certificate belongs to.
 `description` | No | A description of the program.
@@ -199,7 +199,7 @@ Run the following in your terminal:
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"school_name":"University of Western Ontario","from_time":"1990-01-01T00:00:00Z","to_time":"1994-01-01T00:00:00Z","degree_name":"Biology","field_of_study":"Science"}' \
+     -d '{"school_name":"University of Western Ontario","from_time":"May 1, 2020 12:00 am","to_time":"May 1, 2022 12:00 am","degree_name":"Biology","field_of_study":"Science"}' \
      https://talentaccelerator.dev/api/v1/user-education/1
 ```
 
@@ -208,7 +208,7 @@ curl -X PUT -H "Content-Type: application/json" \
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"school_name":"University of Western Ontario","from_time":"1990-01-01T00:00:00Z","to_time":"1994-01-01T00:00:00Z","degree_name":"Biology","field_of_study":"Science"}' \
+     -d '{"school_name":"University of Western Ontario","from_time":"May 1, 2020 12:00 am","to_time":"May 1, 2022 12:00 am","degree_name":"Biology","field_of_study":"Science"}' \
      http://localhost:8000/api/v1/user-education/1
 ```
 

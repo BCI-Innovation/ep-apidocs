@@ -47,7 +47,7 @@ Run the following in your terminal:
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"name": "Golang","expertise":3,"rating":5}' \
+     -d '{"name": "Golang","expertise":"3","rating":"5"}' \
      https://talentaccelerator.dev/api/v1/user-skills
 ```
 
@@ -56,7 +56,7 @@ curl -X POST -H "Content-Type: application/json" \
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"name": "Golang","expertise":3,"rating":5}' \
+     -d '{"name": "Golang","expertise":"3","rating":"5"}' \
      http://localhost:8000/api/v1/user-skills
 ```
 
