@@ -57,7 +57,7 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
      -d '{"upload_content":"xyz","upload_filename":"lalal.png"}' \
-     https://talentaccelerator.dev/api/v1/user-operations
+     https://talentaccelerator.dev/api/v1/user-operations/avatar
 ```
 
 **OR**
