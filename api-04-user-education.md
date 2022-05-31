@@ -24,7 +24,7 @@ This endpoint will return a list of public users.
 
 Query Parameters | Required | Default | Description
 --------- | ----------- | ----------- | -----------
-`cursor` | No | 0 | The cursor of the record in the list which will be used as to filter any records less then this value.
+`offset` | No | 0 | The offset of the record in the list which will be used as to filter any records less then this value.
 `limit`| No | 250 | The maximum number of entries to return in the pagination. Backend will not allow any value larger then 500.
 `sort_order` | No | DESC | The sort order to return the records by.
 `sort_field` | No | id | The sort field to sort the records by.

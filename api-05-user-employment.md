@@ -7,6 +7,67 @@ summary: "The API gateway deals with user employments."
 
 The API gateway deals with providing access to user employment and making changes.
 
+
+# **List Data**
+##### Description
+This endpoint will return a list of public employments.
+
+##### URL
+
+`https://talentaccelerator.dev/api/v1/public/user-employments`
+
+##### Method
+
+`GET`
+
+##### URL Params
+
+Query Parameters | Required | Default | Description
+--------- | ----------- | ----------- | -----------
+`offset` | No | 0 | The offset of the record in the list which will be used as to filter any records less then this value.
+`limit`| No | 250 | The maximum number of entries to return in the pagination. Backend will not allow any value larger then 500.
+`sort_order` | No | DESC | The sort order to return the records by.
+`sort_field` | No | id | The sort field to sort the records by.
+`search` | No | "" | The keywords to search through the database for.
+`user_id` | No | "" | The record which belongs to the specific user.
+
+*Note (1): Query parameter inputted values must be **number of milliseconds since January 1, 1970 00:00:00** as found in the JavaScript [`getTime()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) function.*
+
+*Note (2): Try running `console.log(new Date().getTime())` in your console to get an example of how the query parameter inputted value looks like.*
+
+##### Data Params
+
+None
+
+##### Success Response
+
+  * **Status**: `200`
+  * **Content**:
+    ```json
+
+    ```
+
+##### Sample Call
+
+Run the following in your terminal:
+
+```shell
+curl "https://talentaccelerator.dev/api/v1/public/user-employments" \
+    -H "Content-Type: application/json"
+```
+
+**OR**
+
+```shell
+curl "http://127.0.0.1:8000/api/v1/public/user-employments" \
+    -H "Content-Type: application/json"
+```
+
+##### Notes
+
+None
+
+
 # **Create Employment**
 ##### Description
 
