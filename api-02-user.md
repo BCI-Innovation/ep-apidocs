@@ -229,6 +229,8 @@ Parameter | Required | Description
 `date_of_birth` | Yes | xxx.
 `gender` | Yes | xxx.
 `website` | Yes | xxx.
+`title` | Yes | xxx.
+`work_status` | Yes | xxx.
 
 ##### Success Response
 
@@ -257,6 +259,8 @@ Parameter | Required | Description
         "avatar_file_url":null,
         "cv_title":null,
         "cv_file_url":null,
+        "title":"Author",
+        "work_status":"Working on next dune",
         "date_of_birth":null,
         "gender":null,
         "about_me":null,
@@ -284,7 +288,7 @@ Run the following in your terminal:
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"email":"fherbert@dune.com","first_name":"Frank","middle_name":"","last_name":"Herbert","city":"London","province":"Ontario","country":"Canada","country_tel_code":"1","telephone":"123 456 7890","date_of_birth":"1989-12-31T19:00:00-05:00","gender":"m","website":"https://dune.com"}' \
+     -d '{"email":"fherbert@dune.com","first_name":"Frank","middle_name":"","last_name":"Herbert","city":"London","province":"Ontario","country":"Canada","country_tel_code":"1","telephone":"123 456 7890","date_of_birth":"1989-12-31T19:00:00-05:00","gender":"m","website":"https://dune.com","title":"Author","work_status":"Working on next Dune."}' \
      https://talentaccelerator.dev/api/v1/user/1/personal-details
 ```
 
@@ -293,6 +297,6 @@ curl -X PUT -H "Content-Type: application/json" \
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
      -H "Authorization: Bearer $EMPLOYMENTPORTAL_ACCESS_TOKEN" \
-     -d '{"email":"fherbert@dune.com","first_name":"Frank","middle_name":"","last_name":"Herbert","city":"London","province":"Ontario","country":"Canada","country_tel_code":"1","telephone":"123 456 7890","date_of_birth":"1989-12-31T19:00:00-05:00","gender":"m","website":"https://dune.com"}' \
+     -d '{"email":"fherbert@dune.com","first_name":"Frank","middle_name":"","last_name":"Herbert","city":"London","province":"Ontario","country":"Canada","country_tel_code":"1","telephone":"123 456 7890","date_of_birth":"1989-12-31T19:00:00-05:00","gender":"m","website":"https://dune.com","title":"Author","work_status":"Working on next Dune."}' \
      http://localhost:8000/api/v1/user/1/personal-details
 ```
